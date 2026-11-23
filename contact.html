@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liên hệ với Nhật Huy">
+    <title>Liên hệ | Nhật Huy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a class="logo" href="index.html">NH<span>.</span></a>
+            <button class="menu-toggle" id="menuToggle" type="button"
+                    aria-label="Mở menu" aria-expanded="false">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Trang chủ</a>
+                <a href="projects.html">Dự án</a>
+                <a class="active" href="contact.html">Liên hệ</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle"
+                    type="button" aria-label="Đổi giao diện">🌙</button>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <section class="page-heading reveal">
+            <span class="eyebrow">GET IN TOUCH</span>
+            <h1>Hãy cùng <span class="gradient-text">kết nối.</span></h1>
+            <p>Để lại lời nhắn cho mình. Mình rất vui khi nhận được phản hồi từ bạn.</p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-intro reveal">
+                <div class="contact-icon">✉</div>
+                <h2>Gửi lời nhắn cho mình</h2>
+                <p>
+                    Bạn có thể sử dụng biểu mẫu bên cạnh để gửi câu hỏi,
+                    góp ý hoặc trao đổi về các dự án học tập.
+                </p>
+
+                <div class="contact-feature">
+                    <span>✦</span>
+                    <div>
+                        <h3>Phản hồi</h3>
+                        <p>Mình sẽ phản hồi khi nhận được tin nhắn.</p>
+                    </div>
+                </div>
+
+                <div class="contact-feature">
+                    <span>⌘</span>
+                    <div>
+                        <h3>Cùng học hỏi</h3>
+                        <p>Luôn sẵn sàng trao đổi kiến thức và ý tưởng.</p>
+                    </div>
+                </div>
+            </div>
+
+<form class="contact-form reveal"
+      action="https://formspree.io/f/xyewbjon"
+      method="POST">
+                <h2>Thông tin liên hệ</h2>
+                <p>Các mục có dấu * là bắt buộc.</p>
+
+                <label for="name">Họ và tên *</label>
+                <input id="name" name="name" type="text"
+                       placeholder="Nhập họ và tên" required>
+
+                <label for="email">Email *</label>
+                <input id="email" name="email" type="email"
+                       placeholder="example@email.com" required>
+
+                <label for="subject">Chủ đề *</label>
+                <input id="subject" name="subject" type="text"
+                       placeholder="Nhập chủ đề" required>
+
+                <label for="message">Nội dung tin nhắn *</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Viết lời nhắn của bạn..." required></textarea>
+
+                <button class="button button-primary submit-button" type="submit">
+                    Gửi tin nhắn ↗
+                </button>
+                <small>Thông tin của bạn được gửi qua dịch vụ Formspree.</small>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a class="logo" href="index.html">NH<span>.</span></a>
+            <p>© <span class="year"></span> Nhật Huy. Được xây dựng bằng HTML, CSS và JavaScript.</p>
+        </div>
+    </footer>
+</body>
+</html>
